@@ -21,7 +21,7 @@ for iCam = 1:opts.num_cam
     
     % Create video
     filename = sprintf('%s/%s/%s/cam%d_%s.mp4',opts.experiment_root, opts.experiment_name, folder, iCam, opts.sequence_names{opts.sequence});
-    video = VideoWriter(filename, 'MPEG-4');
+    video = VideoWriter(filename);
     open(video);
     
     % Load result
